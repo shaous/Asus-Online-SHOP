@@ -11,7 +11,6 @@ const Layout = ({ children }) =>
         <div className='layout'>
             <Head>
                 <title>Asus Online Shop</title>
-                <link rel="shortcut icon" type="image/png" href="../public/favicon.png" />
             </Head>
             <header>
                 <Navbar />

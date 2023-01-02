@@ -13,8 +13,8 @@ const Product = ({ product: { name, image, slug, price } }) =>
     const { onAdd } = useStateContext()
 
     return (
-        <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 2 }}>
-            <Link href={`/product/${slug.current}`}>
+        <Link href={`/product/${slug.current}`}>
+            <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 2 }}>
                 <div className='product-card'>
                     <img src={urlFor(image && image[0])} alt="" className='card-product-image' width={250} height={250} />
                     <div className='product-card-info'>
@@ -27,8 +27,8 @@ const Product = ({ product: { name, image, slug, price } }) =>
                         </div>
                     </div>
                 </div>
-            </Link>
-        </motion.div >
+            </motion.div >
+        </Link>
     )
 }
 

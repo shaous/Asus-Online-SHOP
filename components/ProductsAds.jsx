@@ -38,28 +38,27 @@ const ProductsAds = () =>
         <div className='product-ads-container'>
             <motion.h1 variants={sentence} initial="hidden" whileInView="visble" className='ads-h1' viewport={{ once: true }}>
                 <TypeAnimation
-                    // Same String at the start will only be typed once, initially
                     sequence={[
                         'Be Best With Asus',
                         1000,
                     ]}
-                    speed={30} // Custom Speed from 1-99 - Default Speed: 40
+                    speed={30}
                     style={{ fontSize: '15rem' }}
-                    wrapper="span" // Animation will be rendered as a <span>
-                    repeat={5} // Repeat this Animation Sequence infinitely
+                    wrapper="span"
+                    repeat={5}
                     variants={sentence} initial="hidden" whileInView="visble" className='ads-h1' viewport={{ once: true }}
                 />
             </motion.h1>
-            <motion.div className='ads-wrap' initial={{ opacity: 0 }} whileInView={{ opacity: 1, zIndex: 995 }} transition={{ delay: 5 }} viewport={{ once: true }}>
-                <motion.div className="ads-pic" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 7 }} viewport={{ once: true }}>
+            <motion.div className='ads-wrap' initial={{ opacity: 0 }} whileInView={{ opacity: 1, zIndex: 995 }} transition={{ delay: 5, duration: 2 }} viewport={{ once: true }}>
+                <motion.div className="ads-pic" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 8, duration: 2 }} viewport={{ once: true }}>
                     <Image src={monitorPic} />
                 </motion.div>
-                {/* <div className='ads-images'> */}
-                <Image src={headphonePic} />
-                <Image src={keyboardPic} />
-                <Image src={mousePic} />
-                {/* </div> */}
-                <motion.div className='ads-pic' initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 7 }} viewport={{ once: true }}>
+                <div className='ads-images' initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 8, duration: 2 }} viewport={{ once: true }}>
+                    <Image src={headphonePic} />
+                    <Image src={keyboardPic} />
+                    <Image src={mousePic} />
+                </div>
+                <motion.div className='ads-pic' initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 8, duration: 2 }} viewport={{ once: true }}>
                     <Image src={pcPic} />
                 </motion.div>
             </motion.div>

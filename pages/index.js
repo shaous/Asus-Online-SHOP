@@ -19,9 +19,7 @@ import { CgTouchpad } from "react-icons/cg"
 import { AiOutlineLaptop } from "react-icons/ai"
 import { MdKeyboardArrowUp } from "react-icons/md"
 
-import ScrollToTop from "react-scroll-to-top";
-
-import LiveChat from 'react-livechat'
+// import LiveChat from 'react-livechat'
 
 const Home = ({ products, bannerData }) =>
 {
@@ -95,7 +93,8 @@ const Home = ({ products, bannerData }) =>
             <div className='mid-shape'> </div>
             <div className='center-shape'> </div>
           </div>
-          {isLoaded && (<LiveChat license={14516610} />)}
+
+          {/* {isLoaded && (<LiveChat license={14516610} />)} */}
 
           <div className='go-wrap'>
             <div className='go-top-wrap'>
@@ -104,9 +103,6 @@ const Home = ({ products, bannerData }) =>
               </button>)}
             </div>
           </div>
-
-          {/* <ScrollToTop top={150} color="blue" smooth width='60px' component={<MdKeyboardArrowUp size={40} />} viewBox="0 0 24 24" /> */}
-
 
           <div className='products-marquee'>
             <div className='input-search-container'>

@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 import { FaPlay, FaPause } from "react-icons/fa"
 import { IoPlayBack, IoPlayForward } from "react-icons/io5"
-import { TypeAnimation } from 'react-type-animation'
+// import { TypeAnimation } from 'react-type-animation'
 import { Link as LinkR } from "react-scroll"
 
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';

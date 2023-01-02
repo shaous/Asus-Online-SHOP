@@ -69,12 +69,17 @@ a {
 }
 
 .ads-images {
-  width: 50%;
+  width: 70%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
+}
+
+.ads-images img {
+  width: 35%;
+  height: 50%;
 }
 
 .ads-h1 {
@@ -95,12 +100,12 @@ a {
 }
 
 .ads-wrap img {
-  width: 10%;
+  /* width: 20%;
   height: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
-  object-fit: contain;
+  object-fit: contain; */
   /* position: relative; */
 }
 
@@ -110,7 +115,15 @@ a {
   align-items: center;
   flex-direction: column;
   padding-bottom: 6.5rem;
+}
 
+.ads-pic img {
+  width: 85%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  object-fit: contain;
 }
 
 .main-container {
@@ -268,7 +281,7 @@ a {
   cursor: pointer;
   z-index: 998;
   top: 92%;
-  left: 95.6%;
+  left: 95.7%;
 }
 
 .hidden-btn {
@@ -411,7 +424,7 @@ span.text-red {
 }
 
 .logo {
-  width: 30%;
+  width: 50%;
   height: 70%;
   display: flex;
   justify-content: center;
@@ -485,7 +498,7 @@ span.text-red {
   align-items: center;
   position: relative;
   border: solid #00fff5 3px;
-  border-radius: 50px;
+  border-radius: 20px;
   color: #00fff5;
   background-color: transparent;
   box-shadow: 5px 5px 24px #006662, -5px -5px 24px #00ffff;
@@ -504,7 +517,7 @@ span.text-red {
   right: 0;
   color: #00fff5;
   z-index: 998;
-  padding-right: 1.5rem;
+  padding-right: 0.5rem;
 }
 
 .input-icon {
@@ -523,7 +536,7 @@ span.text-red {
   border: none;
   color: #00fff5;
   background-color: transparent;
-  padding: 0.5rem 1.5rem;
+  padding: 0.5rem 0.5rem;
   font-size: 1.5rem;
   caret-height: 2rem;
   outline: none;
@@ -603,7 +616,7 @@ span.text-red {
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
-  /* background: rgba(10, 13, 17, 0.65); */
+  background: rgba(10, 13, 17, 0.65);
   -webkit-backdrop-filter: blur(4px);
   backdrop-filter: blur(4px);
 
