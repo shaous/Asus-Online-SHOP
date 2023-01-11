@@ -19,7 +19,7 @@ import { CgTouchpad } from "react-icons/cg"
 import { AiOutlineLaptop } from "react-icons/ai"
 import { MdKeyboardArrowUp } from "react-icons/md"
 
-// import LiveChat from 'react-livechat'
+import { LiveChatWidget, EventHandlerPayload } from '@livechat/widget-react'
 
 const Home = ({ products, bannerData }) =>
 {
@@ -94,8 +94,7 @@ const Home = ({ products, bannerData }) =>
             <div className='center-shape'> </div>
           </div>
 
-          {/* {isLoaded && (<LiveChat license={14516610} />)} */}
-
+          {isLoaded && (<LiveChatWidget license="14907978" />)}
           <div className='go-wrap'>
             <div className='go-top-wrap'>
               {showTopBtn && (<button className={"go-top-btn"} onClick={() => { document.documentElement.scrollTop = 0 }} >
