@@ -20,6 +20,7 @@ import { AiOutlineLaptop } from "react-icons/ai"
 import { MdKeyboardArrowUp } from "react-icons/md"
 
 import { LiveChatWidget, EventHandlerPayload } from '@livechat/widget-react'
+import { all } from 'axios'
 
 const Home = ({ products, bannerData }) =>
 {

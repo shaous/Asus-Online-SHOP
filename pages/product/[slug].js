@@ -11,7 +11,7 @@ import toast from 'react-hot-toast'
 const ProductDetails = ({ products, product }) =>
 {
 
-    const { image, price, details, name } = product
+    const { image, price, details, name, type } = product
 
     const [index, setIndex] = useState(0)
 
@@ -22,6 +22,8 @@ const ProductDetails = ({ products, product }) =>
         onAdd(product, qty)
         setShowCart(true)
     }
+
+    console.log(type)
 
     return (
         <div>
@@ -35,7 +37,6 @@ const ProductDetails = ({ products, product }) =>
                             <motion.img key={i} src={urlFor(item)} className={i === index ? "small-image selected-image" : "small-image"} onMouseEnter={() => setIndex(i)} initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1.5, delay: i + 0.5 }} />
                         ))}
                     </div>
-
                 </div>
                 <div className='product-detail-desc'>
                     <motion.h1 initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1, delay: 0.5 }} >{name}</motion.h1>
@@ -99,8 +100,6 @@ export const getStaticProps = async ({ params: { slug } }) =>
 
     const product = await client.fetch(query);
     const products = await client.fetch(productsQuery);
-
-    console.log(product);
 
     return {
         props: { products, product }

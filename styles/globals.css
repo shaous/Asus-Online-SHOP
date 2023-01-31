@@ -1359,6 +1359,7 @@ span.text-red {
 
 
 .product-detail-desc h1 {
+  width: 100%;
   margin-top: 10px;
   font-size: 4rem;
   font-weight: 900;

@@ -5,7 +5,7 @@ export default {
     fields: [
         {
             name: 'image',
-            title: 'Image',
+            title: 'Image(Maximum Is 6)',
             type: 'array',
             of: [{ type: 'image' }],
             options: {
@@ -19,7 +19,7 @@ export default {
         },
         {
             name: 'category',
-            title: 'Category',
+            title: 'Category Of Product(Monitor , Laptop , Pc . . .)',
             type: 'string',
         },
         {
@@ -35,6 +35,18 @@ export default {
             name: 'price',
             title: 'Price',
             type: 'number',
+        },
+        {
+            name: 'type',
+            title: 'Product Category(Rog , Tuf , Strix)',
+            type: 'string',
+            options: {
+                list: [
+                    { title: 'Rog', value: 'rog' },
+                    { title: 'Tuf', value: 'tuf' },
+                    { title: 'Strix', value: 'strix' }
+                ]
+            }
         },
         {
             name: 'details',
