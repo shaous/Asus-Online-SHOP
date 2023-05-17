@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import Link from 'next/link'
 import Image from 'next/image'
 import { Link as LinkS } from "react-scroll"
 
@@ -20,7 +21,7 @@ import { AiOutlineLaptop } from "react-icons/ai"
 import { MdKeyboardArrowUp } from "react-icons/md"
 
 import { LiveChatWidget, EventHandlerPayload } from '@livechat/widget-react'
-import { all } from 'axios'
+
 
 const Home = ({ products, bannerData }) =>
 {

@@ -8,7 +8,7 @@ import { BsCartPlus } from "react-icons/bs"
 
 import { useStateContext } from '../context/StateContext'
 
-const Product = ({ product: { name, image, slug, price } }) =>
+const Product = ({ product: { name, image, slug, price, category } }) =>
 {
     const { onAdd } = useStateContext()
 

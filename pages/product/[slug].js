@@ -11,7 +11,7 @@ import toast from 'react-hot-toast'
 const ProductDetails = ({ products, product }) =>
 {
 
-    const { image, price, details, name, type } = product
+    const { image, price, details, name, type, category} = product
 
     const [index, setIndex] = useState(0)
 
@@ -23,7 +23,7 @@ const ProductDetails = ({ products, product }) =>
         setShowCart(true)
     }
 
-    console.log(type)
+    console.log(type , category)
 
     return (
         <div>
